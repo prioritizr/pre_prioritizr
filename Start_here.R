@@ -4,13 +4,13 @@ library(tidyr)
 library(marxan)
 library(shiny)
 
-source("D:/Work/Charlotte/errors/PrioritizR_csv/To_source.R")
-outloc <- "D:/Work/Charlotte/errors/PrioritizR_csv/outloc"
-app <- "D:/Work/Charlotte/errors/PrioritizR_csv/app2"
+source("To_source.R")
+outloc <- "outloc"
+app <- "app"
 
-appfls <- "D:/Work/Charlotte/errors/PrioritizR_csv/R"
+appfls <- "/R"
 
-shp <- readOGR("D:/Work/R/PrioritizR/shp","Mamm_ingest")
+shp <- readOGR("./shp","Mamm_ingest")
 ingest(shp,outloc)
 
 #csv <- "D:/Work/Charlotte/errors/PrioritizR_csv/shp/2030_26_widebyspecies.csv"
